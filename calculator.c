@@ -3,42 +3,42 @@
 #include <math.h>
 
 
-double addition()
+double add()
 {
     double nr1, nr2;
     scanf("%lf%lf", &nr1, &nr2);
     return nr1+nr2;
 }
 
-double subtraction()
+double sub()
 {
     double nr1, nr2;
     scanf("%lf%lf", &nr1, &nr2);
     return nr1-nr2;
 }
 
-double multiplication()
+double mult()
 {
     double nr1, nr2;
     scanf("%lf%lf", &nr1, &nr2);
     return nr1*nr2;
 }
 
-double division()
+double div()
 {
     double nr1, nr2;
     scanf("%lf%lf", &nr1, &nr2);
     return nr1/nr2;
 }
 
-double squareRoot()
+double squareR()
 {
     double nr;
     scanf("%lf", &nr);
     return sqrt(nr);
 }
 
-double power()
+double po()
 {
     int nr1, nr2;
     scanf("%d%d", &nr1, &nr2);
@@ -48,17 +48,17 @@ double power()
 double operationType (char o)
 {
     if (o=='+')
-        return addition();
+        return add();
     else if (o=='-')
-        return subtraction();
+        return sub();
     else if (o=='*')
-        return multiplication();
+        return mult();
     else if (o=='/')
-        return division();
+        return div();
     else if (o=='s')
-        return squareRoot();
+        return squareR();
     else if (o=='^')
-        return power();
+        return po();
     else
         return 0;
 
